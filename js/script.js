@@ -8,12 +8,18 @@ console.log("JS OK");
 */
 
 // Recupero l'elemento in pagina
-const targetElement = document.getElementById("target");
+const totalElement = document.getElementById("total");
+let priceMessage = "Il totale del tuo biglietto e";
+let discountMessage = "Hai ricevuto uno sconto del";
 
 //Domanda 1-2
 const userKilometers = prompt("Quanti kilometri vuoi percorrere?", 50);
 const userAge = prompt("Quanti anni hai?");
-console.log(userChoise, userNumber);
+
+//Calcolo il prezzo
+let price = Kms * 0.21;
+
+//Verifico eventuali sconti
 
 //applica il 20% di sconto se minorenne 1l 40% sugli over 65
 if (userAge < 18) {
